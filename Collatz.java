@@ -8,6 +8,7 @@ public class Collatz {
 		if (mode.equals("v")) {
 			//verbose mode
 			for (int i = 1; i <= seed; i++) {
+				if (i == 1) { System.out.println("1 4 2 1 (4)"); }
 
 				currentNum = i;
 				count = 0;
@@ -20,7 +21,7 @@ public class Collatz {
 					System.out.print(currentNum + " ");
 					count++; }
 					System.out.println("(" + (count + 1) + ")");				}
-		System.out.println("Every one of the first " + seed + " hailstone sequences reached 1.");
+					System.out.println("Every one of the first " + seed + " hailstone sequences reached 1.");
 		}
 
 		else if (mode.equals("c")) {
