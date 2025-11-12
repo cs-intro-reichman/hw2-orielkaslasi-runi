@@ -9,7 +9,7 @@ public class Collatz {
         if (mode.equals("v")) {
             // verbose mode
             for (int i = 1; i <= seed; i++) {
-                if (i == 1 && seed > 1) {
+                if (i == 1) {
                     System.out.println("1 4 2 1 (4)");
                 } else {
                     currentNum = i;
