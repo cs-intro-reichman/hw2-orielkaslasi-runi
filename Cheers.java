@@ -12,7 +12,7 @@ public class Cheers {
                 cheer = cheer.toUpperCase();
                 int times = Integer.parseInt(args[1]);
                 int length = cheer.length();
-                String specialLetters = "AEFHILUMNOR";
+                String specialLetters = "AEFHILUYMNOR";
                 for (int i = 0; i < length; i++) {
                         System.out.print("Give me ");
                         char currentLetter = cheer.charAt(i);
@@ -21,7 +21,7 @@ public class Cheers {
                                 System.out.print("an ");
                         }
                         else {
-                                System.out.print("a  ");
+                                System.out.print("a ");
                         }
                         System.out.println(currentLetter + ": " + currentLetter + "!");
                         }

@@ -8,17 +8,18 @@ public class CalcPi {
 		// Pseudo code:
 		// get args[0] num of terms -> calculate terms
 		// writing JAVA
-
         int times = Integer.parseInt(args[0]);
-		double denominator = 1;
-		double sign = -1;
-		double pi = 0;
-		for (int i = 0; i<times; i++) {
-			sign = sign * -1;
-			pi = pi + (sign * (1/denominator));
-			denominator = denominator + 2;
-			}
-		System.out.println("pi according to Java:  " + Math.PI);
-		System.out.println("pi, approximated:     " + (pi * 4));
-		}
-	}
+        double denominator = 1;
+        double sign = -1;
+        double pi = 0;
+
+        for (int i = 0; i < times; i++) {
+            sign = sign * -1;
+            pi = pi + (sign * (1.0 / denominator));
+            denominator = denominator + 2;
+        }
+
+        System.out.println("pi according to Java: " + Math.PI);
+        System.out.println("pi, approximated:     " + (pi * 4));
+    }
+}

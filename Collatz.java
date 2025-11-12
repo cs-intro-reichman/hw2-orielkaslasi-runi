@@ -2,7 +2,7 @@
 public class Collatz {
 	public static void main(String args[]) {
 	    int seed = Integer.parseInt(args[0]);
-	    String mode = args[1];
+	    String mode = args[1].toLowerCase();
 		int currentNum;
 		int count;
 		if (mode.equals("v")) {
